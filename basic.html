@@ -1,0 +1,168 @@
+<!-- Complete this worksheet in HTML and CSS. Instructions are as comments; you may use reference_sheet.html and the internet to jog your memory on HTML tags and CSS. -->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Basic HTML</title>
+        <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,400,300,600,700&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+        
+        <style>
+
+
+            h1 {border: 3px solid deeppink;
+                background: lightskyblue;
+            }
+            
+            #byline {
+                color: red;
+            }
+
+            .alert {
+                color: teal;
+                
+                font-size: 18px;
+            }
+        
+            p {
+                color: #5A5A5A;
+                font-size: 16px;
+                font-family: 'Open Sans', serif;
+                width: 50%;
+            }
+            #quote {
+                color: gray;
+                font-style: italic;
+                border: solid lightskyblue 2px;
+            }
+
+            #bargraph {
+                border: 1px solid gray;
+                padding-left: 10px;
+                padding-bottom: 10px;
+                width: 25%;
+            }
+            .bar_label {
+                color: red;
+            }
+            #longest {
+                width: 300px;
+                height: 10px;
+                background: gray;
+                border: 1px solid red;
+            }
+            #longer {
+                width: 200px;
+                height: 10px;
+                background: gray;
+                border: 1px solid red;
+            }
+            #long {
+                width: 100px;
+                height: 10px;
+                background: gray;
+                border: 1px solid red;
+            }
+            #book {
+                font-style: italic;
+                border: solid lightskyblue 2px;
+            }
+            
+
+        </style>
+    </head>
+    
+    <body>
+
+
+        <h1 style="color: firebrick;">Tommy Marquardt</h1>
+        
+        <!--Messing with CSS -->
+            <div class="alert">
+                <h3>Breaking news: Cubs hire Craig Counsell.</h3>
+                <p id= "byline">Reporting by JNL221</p>
+            </div> 
+
+        <h2>My name is Tommy Marquardt. I am a Broadcast & Digital Journalism major at Syracuse University, and I'm from Glenview, Illinois. For fun, I like to watch sports (especially college basketball!!), as well as hanging out with my friends, playing sports, and listening to music. I have a younger sister who is a freshman at Creighton University and a younger brother who is a sophomore in high school.</h2>
+        <!-- Include: a brief intro to yourself -- where you're from, what you like to do for fun, what you're studying, and who your community or family is. -->
+        <!-- Tags to use: <p>, <strong>, <i> -->
+        
+
+        <h2>My Twitter account is <a href="https://twitter.com/tommy_marq">@tommy_marq</a>, and my Instagram account is <a href="https://www.instagram.com/tommy.marq/">@tommy.marq</a></h2>
+        <!-- Include: at least two handles for your social media accounts -->
+        <!-- Tags to use: <p>, <a> -->
+
+    
+        <h2> ~ Challenge: Why is my text maroon? ~</h2>
+        <!-- Challenge! The text in your p tags is currently maroon. Figure out why and make it dark gray, using a hex code. (Hint: use google to find a hex code for a dark gray) When you're done, change the text in the <p> tag below to "My text is gray." -->
+        <p>My text is gray!!</p>
+
+
+        <h2><img src="large_wink.png"></h2>
+        <!-- Include: "large_wink.png" as an image -->
+        <!-- Tags to use: <img> -->
+        <!-- Hint! Use 'reference_sheet.html', which you downloaded with this file, to remember how to include an image. -->
+
+    
+        <h2>Why I'm a great student</h2>
+        <ul>
+            <li>I participate in class</li>
+            <li>I like talking to people</li>
+            <li>I do my work</li>
+        <!-- Include: Use 'reference_sheet.html' to figure out how to add an unordered list here -->
+        <!-- Tags to use: <ul>, <li>, <strong> -->
+        
+    
+        <h2>Top 3 most famous people from my hometown</h2>
+        <ol>
+            <li>Patrick Stump from Fallout Boy</li>
+            <li>Steven Levitan, who created Modern Family</li>
+            <li>Hopefully me soon because this list needs serious improving</li>
+        <!-- Include: an ordered list -->
+        <!-- Tags to use: <ol>, <li>, <a> -->
+
+
+        <h2> ~ Challenge: Read my poetry ~</h2>
+            <p>College is weird shit<br>I am not now who I was<br>This was my haiku</p>
+        <!-- Challenge! Use the internet to figure out what a <br> tag is. Write a short poem about your college experience so far. -->
+        <!-- Tags to use: <p> tags for your lines of poetry, and at least two <br> tags -->
+    
+
+        <h2>This is one of my favorite quotes</h2>
+            <p id="quote">"I once asked her if she ever went to bed with any regrets. She quickly told me, 'Every night, son. I just forget 'em by the time I wake up.'"</p>
+            <h3>-Matthew McConaughey, "Greenlights"</h3>
+        <!-- Include: a quote from a book -- quote should be in italics and gray, title of source should be in an <h3> tag -->
+        <!-- Tags to use: <h3>, <p> with an id named 'quote' that is styled in the <style> section -->
+
+
+        <h2>These are more of my favorite books</h2>
+        <ul>
+            <li id="book">The Great Gatsby</li>
+            <li id="book">The Harry Potter series</li>
+            <li id="book">Unscripted: The Unpredictable Moments That Make Life Extraordinary</li>
+        <!-- Include: an unordered list of at least three books, list items should have a border -->
+        <!-- Tags to use: <ul>, <li> with classes named 'book' that is styled in the <style> section -->
+        
+
+        <h2>Here's how I normally spend my weekend</h2>
+        <h3>(Apologies for the pie chart but it honestly felt appropriate for this data!!)</h3>
+        <iframe title="how i spend my weekends" aria-label="Pie Chart" id="datawrapper-chart-1RUnH" src="https://datawrapper.dwcdn.net/1RUnH/1/" scrolling="no" frameborder="0" style="border: none;" width="600" height="606" data-external="1"></iframe>
+        <!-- Include: a complete Datawrapper chart (you can make up data) showing what you normally spend time on over the weekend; must include all requirements of a complete chart (hed, subhed, intentional colors, byline, etc.) -->
+        <!-- Tags to use: <iframe> -->
+
+
+        <h3>~ Challenge: A very simple bar graph ~</h3>
+        <!-- Challenge! Add CSS styles to '#longer' and '#long' to make the bar graph look like it's ordered from longest to shortest. You may also change the h4 text and the p text to make this simple bar chart reflect real (or fake) data. -->
+
+        <div id="bargraph">
+            <h4>Length of bars</h4>
+            <p class="bar_label">Longest</p>
+            <div id="longest"></div>
+            <p class="bar_label">Longer</p>
+            <div id="longer"></div>
+            <p class="bar_label">Long</p>
+            <div id="long"></div>
+        </div>
+     
+    </body>
+</html>
