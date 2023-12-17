@@ -1,0 +1,103 @@
+<!-- This is the completed HTML page for our final project template. -->
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Final project template: HTML</title>
+		<!-- Required meta tags -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<!-- Link tag for CSS -->
+		<link rel="stylesheet" type="text/css" href="final.css">
+
+		<!-- Google font: Oswald-Light -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
+
+	</head>
+		
+	<body>
+		<section class="header"> 
+			<h2> Measuring the Madness </h2>
+			<h4> Using past analytical trends to better predict an NCAA men's basketball tournament bracket. 
+			<br>Tommy Marquardt</h4>
+		</section>
+		<section>
+			<h3>“The Ball is Tipped”</h3>
+			<!-- Add image below this comment -->
+				<img src="fdu.png" alt="An image from the Fairleigh Dcikinson Knights' upset over Purdue in the 2023 NCAA tournament." height="286px" width="429px">
+			<p>Men’s college basketball is among the most popular sports in the United States, highlighted particularly by its postseason format, the NCAA tournament, known by a variety of different nicknames but most commonly called “March Madness.” The main tournament contains 64 teams, who are seeded one through 16 in four separate regions of a single elimination bracket to crown a national champion.</p>
+
+			<p>Full of good teams losing early and “Cinderella runs” of smaller schools advancing deep into the tournament, March Madness is chaotic, unorthodox, and beautiful. Thus, it is extremely popular amongst fans, who pit themselves against their friends, family, and co-workers in bracket challenges seeking to “predict” the unpredictable.</p>
+
+			<p><a href="https://www.statista.com/statistics/1223099/bracket-march-madness-intention/" target="_blank">Statista</a> estimates that 56.3 million U.S. adults filled out a bracket to predict the tournament before the 2023 tournament. There are 9.2 quintillion possible bracket outcomes. No one has ever achieved a perfect bracket, and it’s highly likely that no one ever will.</p>
+
+			<p>But, with the use of new data tools refined by the analytical minds of the college basketball world, can we identify trends from tournaments past to help give ourselves the best chance of blowing our friends away when we fill out brackets once again this March?</p>
+		</section>
+		<section>
+			<h3>College Basketball’s Data Revolution</h3>
+			<p>Despite frequently drawing the ire of older fans (or even coaches like ex-Syracuse head coach Jim Boeheim), data analytics have taken over college basketball. Predictive ratings developed by data analysts like Ken Pomeroy and Bart Torvik seek to break basketball down to see which teams perform better in which ways at the per-possession level.</p>
+
+			<p>These data tools are widely accepted around the sport, and almost directly dictate betting spreads and are used in the selection of NCAA tournament teams.</p>
+
+			<p>March Madness got its moniker from the frequency with which teams seeded worse going into the tournament achieve upset wins over teams that were far better than them in the regular season, so we aren’t only seeking trends in teams that advance deep into the tournament.</p>
+
+			<p>Just last season, 16-seeded Fairleigh Dickinson achieved a monumental upset over top-seeded Purdue, while 15-seeded Princeton advanced to the Sweet 16. Could these analytics have helped us see this coming?</p>
+
+			<p>The data we’re using is from BartTorvik.com, which is run by Illinois attorney Bart Torvik, and contains data from every individual team’s individual seasons dating from 2012-13 to 2022-23, as well as information on if they were selected for the NCAA tournament, where they were seeded in the tournament, and how deep into the tournament they went.</p>
+		</section>
+		<section>
+			<h3>Searching for Trends</h3>
+			<p>At a basic level, we can look at two of Torvik’s most standard stats: offensive and defensive efficiency. Offensive efficiency is points scored per 100 possessions, adjusted for quality of opponent and venue to output a number that is the expected points per 100 possessions against an average team on a neutral court. Defensive efficiency is the same, just with points allowed.</p> 
+
+			<p>Still with me? Good!</p>
+
+			<p>Since these are formulas and not raw data, the addition of a new data point affects the old data points that calculated the output. Torvik acknowledges that in his <a href="https://adamcwisports.blogspot.com/p/every-possession-counts.html" target="_blank">FAQ section on BartTorvik.com</a> and explains how the formula adjusts itself.</p>
+
+			<p>“The tricky part of calculating the efficiencies is that every result affects its own inputs,” Torvik wrote. “If a team comes into a game with a defensive efficiency of 90 and it gives up more points than expected, its defensive efficiency will go up—and then you have put that new defensive efficiency in as the source for calculating the [efficiency of the first game]. Fortunately, computers can do all that stuff relatively quickly: you just keep doing it and doing it until the numbers stop changing.”</p>
+
+			<p>One finding is that teams with higher offensive efficiency ratings tend to perform better in the tournament, with a rather direct correlation between a team’s average offensive efficiency and the tournament round they advance to.</p>
+
+			<iframe title="On average, teams with a higher adjusted offensive efficiency rating tend to advance further in the NCAA tournament." aria-label="Dot Plot" id="datawrapper-chart-30XSi" src="https://datawrapper.dwcdn.net/30XSi/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="307" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();
+</script>
+
+			<p>This is perhaps unsurprising on the surface level, as saying that “teams with better offenses perform better in the tournament” sounds obvious. Don’t you generally need to score points well to win?</p>
+
+			<p>Well, more surprisingly, there’s less of a direct correlation between a team’s average defensive efficiency and their tournament success. While better defenses still tend to perform better, there’s less of a distinction between a team that wins two tournament games and a national champion than there is on the offensive end.</p>
+
+		</section>
+		<section>
+			<h3>The Anatomy of a Cinderella</h3>
+			<p>A “Cinderella run” in the NCAA tournament is when a team seeded at the bottom of the tournament (generally seeds 11 through 16) wins two or more tournament games, upsetting at least one team seeded better than them along the way. The Cinderellas have become a trademark of March Madness, adding excitement to the tournament as fans try to predict who will make a run each year.</p>
+
+			<p>In the last ten tournaments since 2013 (the 2020 tournament was canceled due to the pandemic), we’ve identified 19 Cinderellas matching that criteria. Amongst these teams, the most notable commonality is in their ability to defend the three-pointer.</p>
+
+			<iframe title="Teams seeded 11-16 that win two or more NCAA tournament games are almost always better than average at limiting opponent 3-point percentage." aria-label="Range Plot" id="datawrapper-chart-GSBAH" src="https://datawrapper.dwcdn.net/GSBAH/2/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="511" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();
+</script>
+
+			<p>These teams on average allowed their opponents to shoot 32.1% from three in their respective seasons, which is significantly better than the 33.3% average allowed by less-successful tournament teams seeded in the same range as these Cinderellas.</p>
+</p>
+		</section>
+
+		<section>
+			<h3>Accepting Chaos</h3>
+			<p>Though these trends are noteworthy, it’s imperative to acknowledge the main factor that drives the chaos of March Madness: the format. Zach Marovitz, an Indiana University sports management student who works with college basketball data, says that the randomness provided by a 64-team, single-elimination tournament aids itself to insanity more than any data could.</p>
+
+			<p>“When you play in a format like this, nothing has to make sense,” Marovitz said. “Data is valuable, but in a one-game scenario, anyone can beat anyone just by shooting uncharacteristically well or catching someone else on an off night.”</p>
+
+			<p>As Marovitz noted, playing a single 40-minute basketball game to decide who is eliminated and who advances as opposed to a seven-game series like the NBA does means that results will happen that just don’t make sense.</p>
+
+			<p>When looking at other metrics such as turnover rate, tempo, and rebounding ability to search for trends in good teams that lose early and weaker teams that advance deep, there just simply aren’t many common traits.</p>
+
+			<p>We wondered earlier if data could have helped us predict Fairleigh Dickinson’s stunning upset of Purdue or Princeton’s impressive run to the Sweet 16. The answer is no. Year in and year out the tournament shows us teams that have been proven better than their opponents for 30 games in the regular season failing to beat a team the data says they should handle.</p>
+
+			<p>March Madness’ entertainment value is driven by the chaos of its bizarre but terrific format, and shows us that data can’t always be used as a predictor in high-stress, single-elimination situations like those of the NCAA tournament. This in turn grows the tournament’s appeal. As the great English philosopher Francis Bacon said: “There is no excellent beauty that hath not some strangeness in the proportion.”</p>
+
+		</section>
+		<div class="footer">
+			<p>This page was built in Github Pages by Tommy Marquardt for JNL221 at Syracuse University. Fonts used: Georgia, Oswald.</p>
+		</div>
+	</body>
+</html>
